@@ -1,0 +1,26 @@
+set varA 1
+set varB 2
+set varC [expr $varA + $varB]
+
+if {$varA > 0} {
+	
+	for {set x 0} {$x < $varC} {incr i} {
+		puts "El valor de x es $x"
+	}
+
+	switch x {
+		"1" {
+			puts "Ejep No. Uno"
+		}
+		"2" {
+			puts "Ejep No. Dos"
+		}
+		"3" {
+			puts "Ejep No. Tres"
+		}
+		default {
+			puts "El numero es mayor que tres, intentes de nuevo"
+		}
+
+	}
+}
